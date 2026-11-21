@@ -1,0 +1,44 @@
+# English translation of the original log (messages translated; all numbers unchanged).
+/workspace/mooccube/wilcoxon_test.py:7: FutureWarning: In the future `np.bool` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np,_a): setattr(np,_a,_t)
+/workspace/mooccube/wilcoxon_test.py:7: FutureWarning: In the future `np.object` will be defined as the corresponding NumPy scalar.
+  if not hasattr(np,_a): setattr(np,_a,_t)
+2026-07-30 08:33:08.732366: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-30 08:33:08.748923: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:485] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-07-30 08:33:08.767606: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:8473] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-07-30 08:33:08.773675: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1471] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-07-30 08:33:08.788417: I tensorflow/core/platform/cpu_feature_guard.cc:211] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE3 SSE4.1 SSE4.2 AVX, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+/home/ubuntu/.local/lib/python3.12/site-packages/recbole/data/dataset/dataset.py:648: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=0, inplace=True)
+/home/ubuntu/.local/lib/python3.12/site-packages/recbole/data/dataset/dataset.py:650: FutureWarning: A value is trying to be set on a copy of a DataFrame or Series through chained assignment using an inplace method.
+The behavior will change in pandas 3.0. This inplace method will never work because the intermediate object on which we are setting values always behaves as a copy.
+
+For example, when doing 'df[col].method(value, inplace=True)', try using 'df.method({col: value}, inplace=True)' or df[col] = df[col].method(value) instead, to perform the operation inplace on the original object.
+
+
+  feat[field].fillna(value=feat[field].mean(), inplace=True)
+/home/ubuntu/.local/lib/python3.12/site-packages/recbole/model/general_recommender/lightgcn.py:124: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:654.)
+  SparseL = torch.sparse.FloatTensor(i, data, torch.Size(L.shape))
+============================================================
+Wilcoxon: post-processing vs LightGCN (temporal LOO, τ=0.5)
+============================================================
+
+[PVR@10 (lower is better)]  n=28,200
+  LightGCN mean=0.4387 post-proc mean=0.0000  Δmean=-0.4387
+  median diff (post-proc − LightGCN)=-0.4000
+  Wilcoxon signed-rank: W=0.0  p=0.000e+00
+  users better with post-proc=21,690  worse=0  tied=6,510
+
+[NDCG@10 (higher is better; measures accuracy cost)]  n=32,111
+  LightGCN mean=0.1066 post-proc mean=0.0745  Δmean=-0.0321
+  median diff (post-proc − LightGCN)=+0.0000
+  Wilcoxon signed-rank: W=73103325.5  p=2.407e-16
+  users better with post-proc=2,586  worse=3,017  tied=26,508
+
+Saved wilcoxon_result.json

@@ -1,0 +1,15 @@
+=== [1/6] MOOCCube · BPR: loading checkpoint and ranking top-50
+[mooccube_csmath_t BPR] users=32111 raw NDCG=0.1084 PVR=0.468 | hard NDCG=0.0780 | inc={'attempted': 0.49632701421800945, 'inferred': 0.02377567140600316} | filter 31.6 us/user | 35s
+=== [2/6] MOOCCube · LightGCN: loading checkpoint and ranking top-50
+/home/ubuntu/.local/lib/python3.12/site-packages/recbole/model/general_recommender/lightgcn.py:124: UserWarning: torch.sparse.SparseTensor(indices, values, shape, *, device=) is deprecated.  Please use torch.sparse_coo_tensor(indices, values, shape, dtype=, device=). (Triggered internally at /pytorch/torch/csrc/utils/tensor_new.cpp:654.)
+  SparseL = torch.sparse.FloatTensor(i, data, torch.Size(L.shape))
+[mooccube_csmath_t LightGCN] users=32111 raw NDCG=0.1066 PVR=0.476 | hard NDCG=0.0745 | inc={'attempted': 0.49632701421800945, 'inferred': 0.02377567140600316} | filter 31.2 us/user | 39s
+=== [3/6] MOOCCube · SASRec: loading checkpoint and ranking top-50
+[mooccube_csmath_t SASRec] users=32111 raw NDCG=0.5914 PVR=0.616 | hard NDCG=0.3268 | inc={'attempted': 0.621998420221169, 'inferred': 0.025750394944707742} | filter 28.5 us/user | 54s
+=== [4/6] Junyi · BPR: loading checkpoint and ranking top-50
+[junyi BPR] users=15178 raw NDCG=0.1336 PVR=0.777 | hard NDCG=0.1451 | inc={'attempted': 0.6661169518312375, 'inferred': 0.29849515563801277} | filter 17.7 us/user | 6s
+=== [5/6] Junyi · LightGCN: loading checkpoint and ranking top-50
+[junyi LightGCN] users=15178 raw NDCG=0.0560 PVR=0.906 | hard NDCG=0.0743 | inc={'attempted': 0.6661169518312375, 'inferred': 0.29849515563801277} | filter 16.8 us/user | 7s
+=== [6/6] Junyi · SASRec: loading checkpoint and ranking top-50
+[junyi SASRec] users=15178 raw NDCG=0.2750 PVR=0.707 | hard NDCG=0.2060 | inc={'attempted': 0.6687968116539545, 'inferred': 0.30000687143544286} | filter 18.3 us/user | 8s
+saved rev1_mitigation_result.json  (total 148s)

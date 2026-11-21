@@ -1,0 +1,25 @@
+paper/revision_metrics_result.json: 72 numeric/equal values; 72 identical, 0 within 1e-9, 0 differ
+paper/sasrec_audit_result.json: 15 numeric/equal values; 15 identical, 0 within 1e-9, 0 differ
+paper/threeseed_result.json: 48 numeric/equal values; 42 identical, 0 within 1e-9, 6 differ (max rel diff 6.36e-02)
+    /mooccube_csmath_t/SASRec/pvr[1]: archived=5.7810836349672525e-05 new=6.148905241215694e-05 rel=6.36e-02
+    /junyi/SASRec/pvr[1]: archived=0.0011908665886443332 new=0.0011879764072022824 rel=2.43e-03
+    /mooccube_csmath_t/SASRec/ndcg[1]: archived=0.0007654621533321497 new=0.0007654866869530852 rel=3.21e-05
+    /mooccube_csmath_t/SASRec/pvr[0]: archived=0.6165612079330616 new=0.6165586068856197 rel=4.22e-06
+    /junyi/SASRec/pvr[0]: archived=0.705558463510716 new=0.7055561725284804 rel=3.25e-06
+paper/wilcoxon_extra_result.json: 24 numeric/equal values; 24 identical, 0 within 1e-9, 0 differ
+junyi/junyi_mastery_sens_result.json: 24 numeric/equal values; 24 identical, 0 within 1e-9, 0 differ
+junyi/junyi_result.json: 30 numeric/equal values; 30 identical, 0 within 1e-9, 0 differ
+mooccube/baselines_pvr.json: 20 numeric/equal values; 20 identical, 0 within 1e-9, 0 differ
+mooccube/conceptcov_result.json: 20 numeric/equal values; 20 identical, 0 within 1e-9, 0 differ
+mooccube/g2g3_t_result.json: 23 numeric/equal values; 23 identical, 0 within 1e-9, 0 differ
+mooccube/junyi_conceptcov_result.json: 20 numeric/equal values; 20 identical, 0 within 1e-9, 0 differ
+mooccube/sasrec_result.json: 18 numeric/equal values; 17 identical, 0 within 1e-9, 1 differ (max rel diff 2.43e-06)
+    [0]/pvr: archived=0.6164794562770428 new=0.616477959938511 rel=2.43e-06
+mooccube/scaffold_rl_v2_result.json: 29 numeric/equal values; 29 identical, 0 within 1e-9, 0 differ
+mooccube/seeds_result.json: 84 numeric/equal values; 81 identical, 0 within 1e-9, 3 differ (max rel diff 3.88e-04)
+    /LightGCN/agg/pvr[1]: archived=0.0006740747874249118 new=0.0006738129886823349 rel=3.88e-04
+    /LightGCN/raw[2]/pvr: archived=0.4752270081490105 new=0.4752290445128269 rel=4.29e-06
+    /LightGCN/agg/pvr[0]: archived=0.47548761739884204 new=0.47548829618678085 rel=1.43e-06
+mooccube/tau_sensitivity_result.json: 42 numeric/equal values; 42 identical, 0 within 1e-9, 0 differ
+mooccube/wilcoxon_result.json: 12 numeric/equal values; 12 identical, 0 within 1e-9, 0 differ
+10 values differ

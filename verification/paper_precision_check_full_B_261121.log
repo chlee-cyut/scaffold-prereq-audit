@@ -1,0 +1,37 @@
+OK   paper/threeseed_result.json/mooccube_csmath_t/SASRec/ndcg[0]: archived=0.59053994 re-run=0.59054009 | 4 dp: 0.5905 vs 0.5905
+OK   paper/threeseed_result.json/mooccube_csmath_t/SASRec/ndcg[1]: archived=0.00076546 re-run=0.00076549 | 4 dp: 0.0008 vs 0.0008
+OK   paper/threeseed_result.json/mooccube_csmath_t/SASRec/pvr[0]: archived=0.61656121 re-run=0.61655861 | PVR % (2 dp, as printed): 61.66 vs 61.66
+OK   paper/threeseed_result.json/mooccube_csmath_t/SASRec/pvr[1]: archived=0.00005781 re-run=0.00006149 | PVR % (2 dp, as printed): 0.01 vs 0.01
+OK   paper/threeseed_result.json/junyi/SASRec/pvr[0]: archived=0.70555846 re-run=0.70555617 | PVR % (2 dp, as printed): 70.56 vs 70.56
+OK   paper/threeseed_result.json/junyi/SASRec/pvr[1]: archived=0.00119087 re-run=0.00118798 | PVR % (2 dp, as printed): 0.12 vs 0.12
+OK   mooccube/seeds_result.json/LightGCN/agg/pvr[0]: archived=0.47548762 re-run=0.47548830 | PVR % (2 dp, as printed): 47.55 vs 47.55
+OK   mooccube/seeds_result.json/LightGCN/agg/pvr[1]: archived=0.00067407 re-run=0.00067381 | PVR % (2 dp, as printed): 0.07 vs 0.07
+OK   mooccube/seeds_result.json/LightGCN/raw[2]/pvr: archived=0.47522701 re-run=0.47522904 | PVR % (2 dp, as printed): 47.52 vs 47.52
+OK   mooccube/sasrec_result.json[0]/pvr: archived=0.61647946 re-run=0.61647796 | PVR % (2 dp, as printed): 61.65 vs 61.65
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|raw/PVR@10: archived=0.61647946 re-run=0.61647796 | PVR % (1 dp, as printed): 61.6 vs 61.6
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|budget-2/PVR@10: archived=0.29309890 re-run=0.29309687 | PVR % (1 dp, as printed): 29.3 vs 29.3
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|budget-3/PVR@10: archived=0.38485612 re-run=0.38485327 | PVR % (1 dp, as printed): 38.5 vs 38.5
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-5/PVR@10: archived=0.54506777 re-run=0.54507000 | PVR % (1 dp, as printed): 54.5 vs 54.5
+NOTE paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-10/PVR@10: archived=0.44288242 re-run=0.44284339 | PVR % (1 dp, as printed): 44.3 vs 44.3 (2 dp: 44.29 vs 44.28)
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-20/NDCG@10: archived=0.40287678 re-run=0.40287814 | 4 dp: 0.4029 vs 0.4029
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-20/PVR@10: archived=0.24942374 re-run=0.24942008 | PVR % (1 dp, as printed): 24.9 vs 24.9
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|raw/PVR@10: archived=0.01885629 re-run=0.01885637 | PVR % (1 dp, as printed): 1.9 vs 1.9
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|hard+backfill/PVR@10: archived=0.00007859 re-run=0.00007859 | PVR % (1 dp, as printed): 0.0 vs 0.0
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|budget-1/PVR@10: archived=0.01280692 re-run=0.01280697 | PVR % (1 dp, as printed): 1.3 vs 1.3
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|budget-2/PVR@10: archived=0.01615059 re-run=0.01615065 | PVR % (1 dp, as printed): 1.6 vs 1.6
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|budget-3/PVR@10: archived=0.01764230 re-run=0.01764237 | PVR % (1 dp, as printed): 1.8 vs 1.8
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|demote-5/PVR@10: archived=0.01091115 re-run=0.01091120 | PVR % (1 dp, as printed): 1.1 vs 1.1
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|demote-10/PVR@10: archived=0.00391425 re-run=0.00391426 | PVR % (1 dp, as printed): 0.4 vs 0.4
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|demote-20/PVR@10: archived=0.00043605 re-run=0.00043606 | PVR % (1 dp, as printed): 0.0 vs 0.0
+OK   paper/rev1/rev1_mitigation_result.json/junyi|LightGCN/attempted|demote-10/PVR@10: archived=0.82007697 re-run=0.82008564 | PVR % (1 dp, as printed): 82.0 vs 82.0
+OK   paper/rev1/rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-20/NDCG@10 (change vs raw): -31.9% vs -31.9%
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/attempted/PVR@10: archived=0.61647946 re-run=0.61647796 | PVR % (1 dp, as printed): 61.6 vs 61.6
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/1hop/PVR@10: archived=0.05999836 re-run=0.05999860 | PVR % (1 dp, as printed): 6.0 vs 6.0
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/closure/PVR@10: archived=0.01885629 re-run=0.01885637 | PVR % (1 dp, as printed): 1.9 vs 1.9
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/PVR_transitive_attempted: archived=0.91345145 re-run=0.91345111 | PVR % (1 dp, as printed): 91.3 vs 91.3
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/attempted/PVR@10: archived=0.66687776 re-run=0.66687264 | PVR % (1 dp, as printed): 66.7 vs 66.7
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/1hop/PVR@10: archived=0.06183145 re-run=0.06183169 | PVR % (1 dp, as printed): 6.2 vs 6.2
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/closure/PVR@10: archived=0.01509900 re-run=0.01509906 | PVR % (1 dp, as printed): 1.5 vs 1.5
+OK   paper/rev1/rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/PVR_transitive_attempted: archived=0.93148261 re-run=0.93148235 | PVR % (1 dp, as printed): 93.1 vs 93.1
+
+35 differing values or derived changes checked; 35 round to the same number at the printed precision, 0 do not; 1 of them differ at 2 decimals (NOTE)

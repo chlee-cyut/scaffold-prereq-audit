@@ -1,0 +1,6 @@
+environment: {"python": "3.12.3", "numpy": "1.26.4", "scipy": "1.12.0", "torch": "2.11.0+cu128", "recbole": "1.2.0"}
+rev1_mitigation_result.json: 450 reference values; 450 match (450 bit-identical); 0 missing, 0 extra, 0 differ
+rev1_variants_result.json: 285 reference values; 285 match (285 bit-identical); 0 missing, 0 extra, 0 differ
+rev1_junyi_outcome_result.json: 20 reference values; 20 match (20 bit-identical); 0 missing, 0 extra, 0 differ
+ALL MATCH
+exit 0

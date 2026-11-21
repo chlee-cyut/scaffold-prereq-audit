@@ -1,0 +1,30 @@
+[
+  {
+    "model": "Pop",
+    "conceptcov@10": 0.24263300159176657,
+    "avg_new_ready@10": 7.873929427886263,
+    "conceptcov@10_postproc": 0.23977035977844666,
+    "n_users": 32109
+  },
+  {
+    "model": "ItemKNN",
+    "conceptcov@10": 0.25406509876213207,
+    "avg_new_ready@10": 4.383580922595778,
+    "conceptcov@10_postproc": 0.24333898842721374,
+    "n_users": 31975
+  },
+  {
+    "model": "BPR",
+    "conceptcov@10": 0.24924744682606378,
+    "avg_new_ready@10": 4.823400867855025,
+    "conceptcov@10_postproc": 0.23945863834395087,
+    "n_users": 32033
+  },
+  {
+    "model": "LightGCN",
+    "conceptcov@10": 0.25419567259428555,
+    "avg_new_ready@10": 4.796077084049099,
+    "conceptcov@10_postproc": 0.24302896610081573,
+    "n_users": 32017
+  }
+]

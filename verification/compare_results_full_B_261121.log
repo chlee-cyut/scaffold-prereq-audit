@@ -1,0 +1,23 @@
+environment: {"python": "3.12.3", "numpy": "1.26.4", "scipy": "1.12.0", "torch": "2.11.0+cu128", "recbole": "1.2.0"}
+  MISMATCH    rev1_mitigation_result.json/junyi|LightGCN/attempted|demote-10/PVR@10: new=0.8200856404833313 ref=0.8200769724182168
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|budget-2/PVR@10: new=0.29309687448062804 ref=0.2930988972313468
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|budget-3/PVR@10: new=0.3848532686440717 ref=0.38485611644013185
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-10/PVR@10: new=0.4428433906301493 ref=0.44288241722026606
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-20/NDCG@10: new=0.402878143076716 ref=0.4028767783185073
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-20/PVR@10: new=0.24942007797270954 ref=0.2494237357517751
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|demote-5/PVR@10: new=0.5450699973893748 ref=0.5450677740023577
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/attempted|raw/PVR@10: new=0.616477959938511 ref=0.6164794562770428
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|budget-1/PVR@10: new=0.012806968117575245 ref=0.012806918005204155
+  MISMATCH    rev1_mitigation_result.json/mooccube_csmath_t|SASRec/inferred|budget-2/PVR@10: new=0.016150650832542017 ref=0.016150587720395147
+rev1_mitigation_result.json: 450 reference values; 434 match (434 bit-identical); 0 missing, 0 extra, 16 differ
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/1hop/PVR@10: new=0.05999859542890139 ref=0.05999836134011166
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/PVR_transitive_attempted: new=0.9134511092210092 ref=0.9134514468976657
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/attempted/PVR@10: new=0.616477959938511 ref=0.6164794562770428
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|clean/closure/PVR@10: new=0.01885636699882172 ref=0.018856293429364006
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/1hop/PVR@10: new=0.06183169190853055 ref=0.06183145459360499
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/PVR_transitive_attempted: new=0.9314823486063881 ref=0.9314826115825552
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/attempted/PVR@10: new=0.6668726443699001 ref=0.6668777610181656
+  MISMATCH    rev1_variants_result.json/mooccube_csmath_t|SASRec|raw/closure/PVR@10: new=0.015099061202244517 ref=0.015099003250853013
+rev1_variants_result.json: 285 reference values; 277 match (277 bit-identical); 0 missing, 0 extra, 8 differ
+rev1_junyi_outcome_result.json: 20 reference values; 20 match (20 bit-identical); 0 missing, 0 extra, 0 differ
+FAILED: 24 problems
