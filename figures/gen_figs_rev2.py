@@ -71,37 +71,37 @@ a2.text(-0.18, 1.02, "(b)", transform=a2.transAxes, fontweight="bold")
 fig.tight_layout(); fig.savefig(OUT + "tau.pdf"); plt.close(fig)
 
 # ---------- worked example ----------
-import math
-fig, ax = plt.subplots(figsize=(3.5, 2.2)); ax.axis("off"); ax.set_xlim(0, 14.6); ax.set_ylim(0, 6.3)
-EW, EH = 2.6, 1.35                                    # ellipse width and height (data units)
-pos = {"c1": (1.35, 3), "c2": (4.15, 4.45), "c3": (4.15, 1.55), "c4": (6.95, 3), "c5": (10.05, 3)}
+fig, ax = plt.subplots(figsize=(3.5, 2.5)); ax.axis("off"); ax.set_xlim(0, 14.2); ax.set_ylim(0, 7.4)
+BW, BH = 2.9, 1.25                                    # concept box width and height (data units)
+pos = {"c1": (1.55, 3.55), "c2": (5.0, 5.55), "c3": (5.0, 1.55), "c4": (8.6, 3.55), "c5": (12.55, 3.55)}
 mastered = {"c1", "c2", "c3"}
 label = {"c1": "$c_1$\naddition", "c2": "$c_2$\nmultiplication", "c3": "$c_3$\nfractions", "c4": "$c_4$\nalgebra", "c5": "$c_5$\nequations"}
 
 
 def rim(p, q):
-    """Point on the ellipse around p in the direction of q (arrows start and end on the outline)."""
-    dx, dy = q[0] - p[0], q[1] - p[1]; t = 1 / math.sqrt((dx / (EW / 2)) ** 2 + (dy / (EH / 2)) ** 2)
+    """Point on the outline of the box centred at p in the direction of q (arrows start and end on the outline)."""
+    dx, dy = q[0] - p[0], q[1] - p[1]
+    t = min((BW / 2) / abs(dx) if dx else float("inf"), (BH / 2) / abs(dy) if dy else float("inf"))
     return (p[0] + t * dx, p[1] + t * dy)
 
 
 for a, b in [("c1", "c2"), ("c1", "c3"), ("c2", "c4"), ("c3", "c4"), ("c4", "c5")]:
     ax.add_patch(FancyArrowPatch(rim(pos[a], pos[b]), rim(pos[b], pos[a]), arrowstyle="-|>", mutation_scale=9,
-                                 color="#888", lw=1, shrinkA=1, shrinkB=1, zorder=1))
+                                 color="#888", lw=1, shrinkA=2, shrinkB=2, zorder=1))
 for c, (x, y) in pos.items():
-    ax.add_patch(Ellipse((x, y), EW, EH, facecolor="#c8f0d2" if c in mastered else "white", edgecolor="#333", lw=1, zorder=2))
+    ax.add_patch(FancyBboxPatch((x - BW / 2, y - BH / 2), BW, BH, boxstyle="round,pad=0,rounding_size=0.35",
+                                facecolor="#c8f0d2" if c in mastered else "white", edgecolor="#333", lw=1, zorder=2))
     ax.text(x, y, label[c], ha="center", va="center", fontsize=6.0, zorder=3)
 for txt, fc, ec, tgt in (("item A: $c_4$", "#dbe7fb", BLUE, "c4"), ("item B: $c_5$", "#fbe0e0", RED, "c5")):
     cx = pos[tgt][0]
-    ax.add_patch(FancyBboxPatch((cx - 1.2, 5.05), 2.4, 0.75, boxstyle="round,pad=0.05", fc=fc, ec=ec, lw=1))
-    ax.text(cx, 5.43, txt, ha="center", va="center", fontsize=6.4, color=ec)
-    ax.add_patch(FancyArrowPatch((cx, 5.0), (cx, pos[tgt][1] + EH / 2), arrowstyle="-|>", mutation_scale=8, color=ec,
+    ax.add_patch(FancyBboxPatch((cx - 1.25, 6.25), 2.5, 0.75, boxstyle="round,pad=0.05", fc=fc, ec=ec, lw=1))
+    ax.text(cx, 6.63, txt, ha="center", va="center", fontsize=6.4, color=ec)
+    ax.add_patch(FancyArrowPatch((cx, 6.2), (cx, pos[tgt][1] + BH / 2), arrowstyle="-|>", mutation_scale=8, color=ec,
                                  lw=.8, ls="--", shrinkA=0, shrinkB=1))
-ax.add_patch(Circle((0.5, 0.45), 0.25, facecolor="#c8f0d2", edgecolor="#333"))
-ax.text(0.9, 0.45, "mastered ($M_u$)", fontsize=6.8, va="center")
-ax.add_patch(Circle((5.4, 0.45), 0.25, facecolor="white", edgecolor="#333"))
-ax.text(5.8, 0.45, "not mastered", fontsize=6.8, va="center")
-ax.text(11.6, 4.6, "Ready(A) = 2/2 = 1\n$\\Rightarrow$ ready", fontsize=6.6, color=BLUE, va="center")
-ax.text(11.6, 1.5, "Ready(B) = 0/1 = 0\n$\\Rightarrow$ violation", fontsize=6.6, color=RED, va="center")
+for x0, fc, txt in ((0.2, "#c8f0d2", "mastered ($M_u$)"), (5.2, "white", "not mastered")):
+    ax.add_patch(FancyBboxPatch((x0, 0.25), 0.6, 0.4, boxstyle="round,pad=0,rounding_size=0.12", facecolor=fc, edgecolor="#333", lw=1))
+    ax.text(x0 + 0.8, 0.45, txt, fontsize=6.8, va="center")
+ax.text(pos["c4"][0], 1.75, "Ready(A) = 2/2\n= 1 $\\Rightarrow$ ready", fontsize=6.2, color=BLUE, va="center", ha="center")
+ax.text(pos["c5"][0], 1.75, "Ready(B) = 0/1\n= 0 $\\Rightarrow$ violation", fontsize=6.2, color=RED, va="center", ha="center")
 fig.tight_layout(pad=0.2); fig.savefig(OUT + "worked_example.pdf"); plt.close(fig)
 print("saved pvr_bars.pdf, tradeoff.pdf, tau.pdf, worked_example.pdf")
